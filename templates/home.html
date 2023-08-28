@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HOME</title>
+<body>
+    
+<div class="menu">
+    
+    <a href="home" class="submenu" style="color:#eaf637 ; font-weight: bold;">HOME</a>
+    <a href="entry_page" class="submenu">ENTRY</a>
+    <a href="report" class="submenu">REPORT</a>
+    <a href="template" class="submenu">TEMPLATE</a>
+    <a href="setting" class="submenu">SETTING</a>
+    </div>
+    <div class="last_20_issue" id="last_20_issue">
+        LAST 20 ISSUE
+    </div>
+    <div class="last_20_recieve" id="last_20_recieve">
+        LAST 20 RECIEVE
+    </div>
+    <div class="last_10_loco" id="last_10_loco">
+        LAST 10 LOCO
+    </div>
+    <div class="latest_items_recieved" id="latest_items_recieved">
+        TOTAL 20
+        5-STOCK
+        5-NON Stock
+        5-CASH PURCHASE'
+        5-R-NOTE
+    </div>
+    <div class="critical_item" id="critical_item">
+        CRITICAL ITEM
+    </div>
+    <div class="inactive_items" id="inactive_items">
+        INACTIVE ITEM
+    </div>
+    <div class="balance" id="balance">
+        BALANCE
+    </div>
+    
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<style>
+body{
+    background-color:#c3c3f3;
+}
+    .submenu{
+        height: 20%;
+        text-decoration: none;
+        color: white;
+        align-self: center;
+    }
+table, th, td {
+  border: 1px solid;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: rgb(177 233 240);
+cursor: pointer;}
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+    .menu{
+        margin: 2px;
+        height: 50px;
+        display: flex;
+        
+        justify-content: space-around;
+        border: 2px solid rgb(104, 98, 98);
+        background-color: black;
+    }
+    .critical_inactive{
+        display: flex;
+        flex-direction:row;
+        border: 2px solid red;
+        justify-content: space-around;
+    }
+    .side_btn{
+        align-self: center;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .last_entries{
+        /* align-self: center; */
+        border: 2px solid red;
+    }
+    .last_loco{
+        /* align-self: center; */
+    border: 2px solid red;
+}
+.last_loco{
+    margin: 5px;
+}
+.last_entries{
+    margin: 5px;
+}
+.user{
+    height: 400%;
+    width: 100%;
+}
+button{
+    padding: .5%;
+    min-width: 9%;
+    margin: 5px;
+    border: 2px aqua solid;
+    border-radius: 5px;
+    background-color: aqua;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: rgb(146, 18, 153);
+    color: #f3eeee;
+}
+</style>
+
+<script src="{{url_for('static',filename='home.js')}}"></script>
+</body>
+</html>
